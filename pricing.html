@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Calculate your estimated ClearPay pricing.">
+
+    <title>Pricing | ClearPay</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+</head>
+
+
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+
+<header class="site-header">
+
+    <nav class="navbar container" aria-label="Main navigation">
+
+        <a href="index.html" class="logo">
+            CLEAR<span>PAY</span>
+        </a>
+
+        <button class="menu-button"
+                id="menuButton"
+                aria-label="Open menu"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <div class="nav-links" id="navLinks">
+
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="pricing.html" class="active">Pricing</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+
+            <button class="theme-button"
+                    id="themeButton"
+                    aria-label="Toggle dark mode">
+                ☾
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main id="main-content">
+
+
+    <section class="page-hero container reveal">
+
+        <p class="eyebrow">
+            PRICING / 01
+        </p>
+
+        <h1>
+            Calculate your
+            <span>ClearPay cost.</span>
+        </h1>
+
+        <p>
+            Change the numbers and see your estimated
+            monthly cost instantly.
+        </p>
+
+    </section>
+
+
+    <section class="section container">
+
+
+        <div class="calculator-layout">
+
+
+            <!-- CALCULATOR -->
+
+            <div class="calculator-card reveal">
+
+                <p class="eyebrow">
+                    LIVE CALCULATOR
+                </p>
+
+                <h2>
+                    Your numbers
+                </h2>
+
+
+                <div class="form-group">
+
+                    <label for="volume">
+                        Monthly payment volume
+                    </label>
+
+                    <div class="input-prefix">
+                        <span>$</span>
+
+                        <input type="number"
+                               id="volume"
+                               value="25000"
+                               min="0"
+                               step="1000">
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="transactions">
+                        Monthly transactions
+                    </label>
+
+                    <input type="number"
+                           id="transactions"
+                           value="180"
+                           min="0">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="international">
+                        International payments
+                    </label>
+
+                    <select id="international">
+
+                        <option value="no">
+                            No
+                        </option>
+
+                        <option value="yes">
+                            Yes
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="businessSize">
+                        Business size
+                    </label>
+
+                    <select id="businessSize">
+
+                        <option value="small">
+                            Small business
+                        </option>
+
+                        <option value="medium">
+                            Growing business
+                        </option>
+
+                        <option value="large">
+                            Large business
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- RESULT -->
+
+            <div class="result-card reveal">
+
+                <p class="eyebrow">
+                    ESTIMATE
+                </p>
+
+                <h2>
+                    Your ClearPay plan
+                </h2>
+
+
+                <div class="result-main">
+
+                    <span>
+                        Estimated monthly cost
+                    </span>
+
+                    <strong id="monthlyCost">
+                        $74.50
+                    </strong>
+
+                </div>
+
+
+                <div class="result-row">
+
+                    <span>
+                        Estimated annual cost
+                    </span>
+
+                    <strong id="annualCost">
+                        $894.00
+                    </strong>
+
+                </div>
+
+
+                <div class="result-row">
+
+                    <span>
+                        Effective rate
+                    </span>
+
+                    <strong id="effectiveRate">
+                        0.30%
+                    </strong>
+
+                </div>
+
+
+                <div class="result-row">
+
+                    <span>
+                        Plan
+                    </span>
+
+                    <strong id="planName">
+                        Clear
+                    </strong>
+
+                </div>
+
+
+                <p class="calculator-note">
+                    This is a fictional calculator for the
+                    ClearPay demo project.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PLANS -->
+
+    <section class="section section-paper">
+
+        <div class="container">
+
+            <div class="section-heading centered reveal">
+
+                <p class="eyebrow">
+                    SIMPLE PLANS
+                </p>
+
+                <h2>
+                    Pick the space
+                    <em>you need.</em>
+                </h2>
+
+            </div>
+
+
+            <div class="pricing-grid">
+
+
+                <article class="price-card reveal">
+
+                    <p class="eyebrow">START</p>
+
+                    <h3>Clear</h3>
+
+                    <div class="price">
+                        $0
+                        <small>/ month</small>
+                    </div>
+
+                    <p>
+                        For individuals and very small teams.
+                    </p>
+
+                    <ul>
+                        <li>Basic payments</li>
+                        <li>Simple dashboard</li>
+                        <li>Monthly reports</li>
+                    </ul>
+
+                    <a href="contact.html"
+                       class="button button-outline">
+                        Get started
+                    </a>
+
+                </article>
+
+
+                <article class="price-card featured-price reveal">
+
+                    <div class="popular">
+                        MOST USED
+                    </div>
+
+                    <p class="eyebrow">GROW</p>
+
+                    <h3>Grow</h3>
+
+                    <div class="price">
+                        $29
+                        <small>/ month</small>
+                    </div>
+
+                    <p>
+                        For growing businesses that need more visibility.
+                    </p>
+
+                    <ul>
+                        <li>Everything in Clear</li>
+                        <li>Advanced analytics</li>
+                        <li>Automation tools</li>
+                    </ul>
+
+                    <a href="contact.html"
+                       class="button button-primary">
+                        Choose Grow
+                    </a>
+
+                </article>
+
+
+                <article class="price-card reveal">
+
+                    <p class="eyebrow">SCALE</p>
+
+                    <h3>Scale</h3>
+
+                    <div class="price">
+                        $79
+                        <small>/ month</small>
+                    </div>
+
+                    <p>
+                        For teams managing larger payment activity.
+                    </p>
+
+                    <ul>
+                        <li>Everything in Grow</li>
+                        <li>Team controls</li>
+                        <li>Priority support</li>
+                    </ul>
+
+                    <a href="contact.html"
+                       class="button button-outline">
+                        Talk to us
+                    </a>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <a href="index.html" class="logo footer-logo">
+                CLEAR<span>PAY</span>
+            </a>
+
+            <p>Your money. Finally clear.</p>
+
+        </div>
+
+        <div>
+            <h3>Explore</h3>
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="about.html">About</a>
+        </div>
+
+        <div>
+            <h3>Company</h3>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+        <span>
+            © <span id="year"></span> ClearPay
+        </span>
+
+        <span>
+            Transparent pricing.
+        </span>
+
+    </div>
+
+</footer>
+
+
+<script src="js/theme.js"></script>
+<script src="js/main.js"></script>
+<script src="js/calculator.js"></script>
+
+</body>
+</html>

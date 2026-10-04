@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Contact the ClearPay team.">
+
+    <title>Contact | ClearPay</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+</head>
+
+
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+
+<header class="site-header">
+
+    <nav class="navbar container" aria-label="Main navigation">
+
+        <a href="index.html" class="logo">
+            CLEAR<span>PAY</span>
+        </a>
+
+        <button class="menu-button"
+                id="menuButton"
+                aria-label="Open menu"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <div class="nav-links" id="navLinks">
+
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+
+            <button class="theme-button"
+                    id="themeButton"
+                    aria-label="Toggle dark mode">
+                ☾
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main id="main-content">
+
+
+    <section class="page-hero container reveal">
+
+        <p class="eyebrow">
+            CONTACT / 01
+        </p>
+
+        <h1>
+            Let's make your
+            <span>money clearer.</span>
+        </h1>
+
+        <p>
+            Have a question about ClearPay?
+            Send us a message.
+        </p>
+
+    </section>
+
+
+    <section class="section container">
+
+
+        <div class="contact-layout">
+
+
+            <!-- CONTACT INFO -->
+
+            <div class="contact-info reveal">
+
+                <p class="eyebrow">
+                    GET IN TOUCH
+                </p>
+
+                <h2>
+                    We would love
+                    to hear from you.
+                </h2>
+
+                <p>
+                    This is a fictional contact form created
+                    for the ClearPay demo project.
+                </p>
+
+
+                <div class="contact-detail">
+
+                    <span>EMAIL</span>
+
+                    <strong>
+                        hello@clearpay.demo
+                    </strong>
+
+                </div>
+
+
+                <div class="contact-detail">
+
+                    <span>RESPONSE TIME</span>
+
+                    <strong>
+                        Within 1 business day
+                    </strong>
+
+                </div>
+
+
+                <div class="contact-detail">
+
+                    <span>LOCATION</span>
+
+                    <strong>
+                        Built for the web
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- FORM -->
+
+            <div class="contact-form-box reveal">
+
+                <form id="contactForm" novalidate>
+
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full name *
+                        </label>
+
+                        <input type="text"
+                               id="name"
+                               name="name"
+                               autocomplete="name"
+                               aria-describedby="nameError">
+
+                        <small class="error-message"
+                               id="nameError">
+                        </small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email address *
+                        </label>
+
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               autocomplete="email"
+                               aria-describedby="emailError">
+
+                        <small class="error-message"
+                               id="emailError">
+                        </small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="company">
+                            Company
+                        </label>
+
+                        <input type="text"
+                               id="company"
+                               name="company"
+                               autocomplete="organization">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="reason">
+                            Reason for contacting *
+                        </label>
+
+                        <select id="reason"
+                                name="reason"
+                                aria-describedby="reasonError">
+
+                            <option value="">
+                                Choose one
+                            </option>
+
+                            <option value="pricing">
+                                Pricing question
+                            </option>
+
+                            <option value="features">
+                                Feature question
+                            </option>
+
+                            <option value="partnership">
+                                Partnership
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                        <small class="error-message"
+                               id="reasonError">
+                        </small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message *
+                        </label>
+
+                        <textarea id="message"
+                                  name="message"
+                                  rows="6"
+                                  aria-describedby="messageError"></textarea>
+
+                        <small class="error-message"
+                               id="messageError">
+                        </small>
+
+                    </div>
+
+
+                    <button type="submit"
+                            class="button button-primary full-button">
+                        Send message
+                    </button>
+
+
+                    <div id="formSuccess"
+                         class="success-message"
+                         role="status">
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <a href="index.html" class="logo footer-logo">
+                CLEAR<span>PAY</span>
+            </a>
+
+            <p>Your money. Finally clear.</p>
+
+        </div>
+
+        <div>
+
+            <h3>Explore</h3>
+
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+
+        </div>
+
+        <div>
+
+            <h3>Company</h3>
+
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+        <span>
+            © <span id="year"></span> ClearPay
+        </span>
+
+        <span>
+            We keep things clear.
+        </span>
+
+    </div>
+
+</footer>
+
+
+<script src="js/theme.js"></script>
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+
+</body>
+</html>

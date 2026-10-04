@@ -1,0 +1,109 @@
+/* =========================================
+   SCROLL REVEAL
+========================================= */
+
+.reveal {
+
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+
+}
+
+
+.reveal.show {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+/* =========================================
+   HERO METER
+========================================= */
+
+.meter-fill {
+
+    animation: meterFill 1.5s ease forwards;
+
+}
+
+
+@keyframes meterFill {
+
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 94%;
+    }
+
+}
+
+
+/* =========================================
+   HOVER ANIMATION
+========================================= */
+
+.feature-card,
+.data-card,
+.value-card,
+.price-card {
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+
+}
+
+
+.feature-card:hover,
+.value-card:hover {
+
+    box-shadow: var(--shadow);
+
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration: 0.01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        transition-duration: 0.01ms !important;
+
+        scroll-behavior: auto !important;
+
+    }
+
+
+    .reveal {
+
+        opacity: 1;
+
+        transform: none;
+
+    }
+
+}
